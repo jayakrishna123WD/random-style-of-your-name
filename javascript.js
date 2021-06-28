@@ -33,8 +33,8 @@
                 var style3 = document.querySelector('#hod3').style;
                 var name = document.getElementById("name").value;
                 document.querySelector('#hod3').innerHTML = name;
-                style3.borderRight = "9px solid #ffafcc";
-                style3.borderBottom = "9px solid #ffafcc";
+                style3.borderRight = "4px solid #ffafcc";
+                style3.borderBottom = "4px solid #ffafcc";
                 style3.textAlign = "center";
                 style3.borderRadius = "2%";
                 style3.Width = "70%";
