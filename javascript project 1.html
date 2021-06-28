@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>javascript</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Akronim&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+        <style>
+           *{
+               margin: 0px;
+               padding: 0px;
+               box-sizing: border-box;
+           } 
+           body{
+            background: linear-gradient(45deg,#F0F2F0,#000C40);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+           }
+           #head{
+               text-align: center;
+               font-size: 90px;
+               margin: 6%;
+               color: whitesmoke;
+               font-family: cursive;
+           }
+           label{
+               font-size: 70px;
+               margin: 20% 10%;
+           }
+           input[type=text] {
+  width: 300px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 44px;
+  background-color: white;
+  transition: width 0.4s ease-in-out;
+  margin: 5% 0 2% 10%;
+  padding: 20px;
+}
+
+input[type=text]:focus {
+  width: 60%;
+}
+
+button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 34px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #000;
+  background-color: Thistle;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+button:hover {background-color: steelblue}
+
+button:active {
+  background-color: mistyrose;
+  box-shadow: 0 5px #666;
+  transform: translateY(10px);
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,250px);
+    grid-template-rows: repeat(10,150px);
+    margin: 5%;
+    padding: 4%;
+    grid-gap: 5%;
+}
+        </style>
+    </head>
+
+    <body>
+        <script>
+            //style1
+            function design1() {
+                var style1 = document.querySelector('#hod1').style;
+                var name = document.getElementById("name").value;
+                document.querySelector('#hod1').innerHTML = name;
+                style1.color = "black";
+                style1.borderLeft = "20px solid black";
+                style1.borderRadius = "3%";
+                style1.padding = "6%";
+                style1.background = "linear-gradient(45deg,#654ea3,#eaafc8)";
+                style1.maxWidth = "87%";
+                style1.fontSize = "95px";
+                style1.margin = "10% 0 20% 0";
+                style1.transform = "rotate(-10deg)";
+                style1.position = "relative";
+                style1.left = "10%";
+                style1.bottom = '20%';
+                style1.fontFamily =  'Dancing Script', cursive;
+            }
+            //style2
+            function design2() {
+                var style2 = document.querySelector('#hod2').style;
+                var name = document.getElementById("name").value;
+                document.querySelector('#hod2').innerHTML = name;
+                style2.textShadow = "15px 35px 10px Purple";
+                style2.color = "white";
+                style2.transform = "skew(20deg,10deg)";
+                style2.margin = "10% 5% 20% 5%";
+                style2.fontSize = "95px";
+                style2.maxWidth = "80%";
+                style2.padding = "3%";
+                style2.fontFamily = 'Kaushan Script', cursive;
+            }
+            //style3
+            function design3() {
+                var style3 = document.querySelector('#hod3').style;
+                var name = document.getElementById("name").value;
+                document.querySelector('#hod3').innerHTML = name;
+                style3.borderRight = "28px solid #ffafcc";
+                style3.borderBottom = "28px solid #ffafcc";
+                style3.textAlign = "center";
+                style3.borderRadius = "2%";
+                style3.Width = "70%";
+                style3.transform = "skew(30deg,-10deg)";
+                style3.textShadow = "15px 35px 10px #fee440";
+                style3.margin = "10% 5% 20% 5%";
+                style3.fontSize = "95px";
+                style3.padding = "3%";
+                style3.fontFamily = 'Kalam', cursive;
+            }
+            //style4
+            function design4() {
+                var style4 = document.querySelector('#hod4').style;
+                var name = document.getElementById("name").value;
+                document.querySelector('#hod4').innerHTML = name;
+                style4.color = "#fee440";
+                style4.border = "4px ridge #cddafd";
+                style4.boxShadow = "12px 12px 60px #f9c74f";
+                style4.textAlign = "center";
+                style4.letterSpacing = "10px";
+                style4.margin = "10% 5% 20% 5%";
+                style4.fontSize = "95px";
+                style4.maxWidth = "80%";
+                style4.padding = "3%";
+                style4.fontFamily = 'Londrina Shadow', cursive;
+            }
+            //style5
+            function design5() {
+                var style5 = document.querySelector('#hod5').style;
+                var name = document.getElementById("name").value;
+                document.querySelector('#hod5').innerHTML = name;
+                style5.color = "white";
+                style5.textShadow = "20px 20px 60px #0353a4";
+                style5.borderTop = "12px dashed #002855";
+                style5.boxShadow = "20px 20px 60px #0353a4"; 
+                style5.margin = "10% 5% 20% 5%";
+                style5.fontSize = "95px";
+                style5.maxWidth = "80%";
+                style5.padding = "3%";
+                style5.fontFamily = 'Bungee Shade', cursive;
+            }
+            //style6
+            function design6() {
+                var style6 = document.querySelector('#hod6').style;
+                var name = document.getElementById("name").value;
+                document.querySelector('#hod6').innerHTML = name;
+                style6.color = "#0a2472";
+                style6.borderBottom = "10px dotted #f4acb7";
+                style6.borderLeft = "10px dotted #f4acb7";
+                style6.borderRadius = "3%";
+                style6.boxShadow = "20px 20px 20px #d100d1";
+                style6.transform = "rotate(10deg)";
+                style6.margin = "10% 5% 20% 5%";
+                style6.fontSize = "95px";
+                style6.maxWidth = "80%";
+                style6.padding = "3%";
+                style6.fontFamily = 'Megrim', cursive;
+            }
+            //style7
+            function design7() {
+                var style7 = document.querySelector('#hod7').style;
+                var name = document.getElementById("name").value;
+                document.querySelector('#hod7').innerHTML = name;
+                style7.color = "#000";
+                style7.letterSpacing = "10px";
+                style7.textAlign = "right";
+                style7.transform = "skew(-20deg,10deg)";
+                style7.textShadow = "15px 35px 30px #dd1c1a";
+                style7.margin = "10% 5% 20% 5%";
+                style7.fontSize = "95px";
+                style7.padding = "3%";
+                style7.fontFamily = 'Akronim', cursive;
+            }
+            //style8
+            function design8() {
+                var style8 = document.querySelector('#hod8').style;
+                var name = document.getElementById("name").value;
+                document.querySelector('#hod8').innerHTML = name;
+                style8.color = "#6247aa";
+                style8.border = "5px inset black";
+                style8.borderRadius = "10px";
+                style8.background = "#d6e2e9";
+                style8.transform = "rotate(10deg)";
+                style8.transform = "skew(10deg,20deg)";
+                style8.margin = "10% 5% 20% 5%";
+                style8.fontSize = "95px";
+                style8.maxWidth = "90%";
+                style8.padding = "4%";
+                style8.fontFamily = 'Monoton', cursive;
+            }
+            //style9
+            function design9() {
+                var style9 = document.querySelector('#hod9').style;
+                var name = document.getElementById("name").value;
+                document.querySelector('#hod9').innerHTML = name;
+                style9.color = "#1d3557";
+                style9.textShadow = "30px 20px 20px #6930c3";
+                style9.textAlign = "center";
+                style9.transform = "skew(-20deg,10deg)";
+                style9.margin = "10% 5% 20% 5%";
+                style9.fontSize = "95px";
+                style9.maxWidth = "80%";
+                style9.padding = "3%";
+                style9.fontFamily = 'Calligraffitti', cursive;
+            }
+            //style 10
+            function design10() {
+                var style10 = document.querySelector('#hod10').style;
+                var name = document.getElementById("name").value;
+                document.querySelector('#hod10').innerHTML = name;
+                style10.color = "#000";
+                style10.textShadow = "20px 20px 10px #e5e5e5";
+                style10.letterSpacing = "10px";
+                style10.transform = "rotate(-15deg)";
+                style10.textAlign = "center";
+                style10.transform = "skew(-10deg,-20deg)";
+                style10.margin = "10% 5% 20% 5%";
+                style10.fontSize = "95px";
+                style10.maxWidth = "80%";
+                style10.padding = "3%";
+                style10.fontFamily = 'Fredericka the Great', cursive;
+            }
+        </script>
+       
+        <h1 id="head">Random Style of your name</h1>
+        <br>
+        <hr>
+        <h2 id="hod1"></h2>
+        <h2 id="hod2"></h2>
+        <h2 id="hod3"></h2>
+        <h2 id="hod4"></h2>
+        <h2 id="hod5"></h2>
+        <h2 id="hod6"></h2>
+        <h2 id="hod7"></h2>
+        <h2 id="hod8"></h2>
+        <h2 id="hod9"></h2>
+        <h2 id="hod10"></h2>
+        <label for="name">Enter the name</label><br>
+        <input type="text" name="name" id="name" required><br>
+        <div class="container">
+        <button onclick="design1()">style1</button><br>
+        <button onclick="design2()">style2</button><br>
+        <button onclick="design3()">style3</button><br>
+        <button onclick="design4()">style4</button><br>
+        <button onclick="design5()">style5</button><br>
+        <button onclick="design6()">style6</button><br>
+        <button onclick="design7()">style7</button><br>
+        <button onclick="design8()">style8</button><br>
+        <button onclick="design9()">style9</button><br>
+        <button onclick="design10()">style10</button><br>
+        </div> 
+    </body>
+</html>
